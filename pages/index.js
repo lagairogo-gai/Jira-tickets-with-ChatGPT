@@ -65,25 +65,25 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Jira ticket with ChatGPT</title>
+        <title>Create User Story</title>
         <link rel="icon" href="/jira.jpg" />
       </Head>
 
       <main className={styles.main}>
         <img src="/jira.jpg" className={styles.icon} />
-        <h3>Create Jira ticket with ChatGPT</h3>
+        <h3>Hello Product Owner, what's on your mind?</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name="ticket-description"
-            placeholder="Enter a ticket description"
+            placeholder="Enter your requirement"
             value={ticketDescription}
             onChange={(e) => setTicketDescription(e.target.value)}
           />
-          <input type="submit" value="Generate ticket text" />
+          <input type="submit" value="Generate User Story" />
         </form>
         <div className={styles.result}>{result}</div>
-        <button className={styles["create-ticket-button"]} onClick={createTicket}>Create ticket</button>
+        <button className={styles["create-ticket-button"]} onClick={createTicket}>Post To Jira</button>
       </main>
     </div>
   );
