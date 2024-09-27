@@ -14,12 +14,12 @@ export default async function (req, res) {
       "issuetype": {
         "name": "Task"
       },
-      "reporter":{
-        "id": process.env.REPORTER_ID
-      },
-      "customfield_17596": {
-        "value": "Maintenance"
-      }
+//      "reporter":{
+//       "id": process.env.REPORTER_ID
+//      },
+//      "customfield_17596": {
+//        "value": "Maintenance"
+//      }
     }
   }
 
